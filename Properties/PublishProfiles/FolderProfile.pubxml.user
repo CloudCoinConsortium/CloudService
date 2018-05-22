@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\CloudCoin\source\repos\CloudService\CloudService\bin\Release\PublishOutput</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/CloudCoinCoreFramework.dll">
+      <publishTime>10/12/2017 17:27:29</publishTime>
+    </File>
+    <File Include="bin/CloudService.dll">
+      <publishTime>05/18/2018 11:59:15</publishTime>
+    </File>
+    <File Include="bin/CloudService.pdb">
+      <publishTime>05/18/2018 11:59:15</publishTime>
+    </File>
+    <File Include="bin/DocumentFormat.OpenXml.dll">
+      <publishTime>01/06/2018 01:25:34</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>10/23/2017 13:15:18</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>10/23/2017 13:15:20</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>08/15/2017 13:12:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Win32.Primitives.dll">
+      <publishTime>11/05/2016 04:55:32</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>10/05/2017 15:43:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>04/13/2017 15:47:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>04/13/2017 15:47:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>04/13/2017 15:47:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>04/13/2017 15:47:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>04/13/2017 15:47:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>04/13/2017 15:47:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>04/13/2017 15:47:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.Process.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.DriveInfo.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.AccessControl.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Claims.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Principal.Windows.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Thread.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/SkiaSharp.dll">
+      <publishTime>10/05/2017 15:43:20</publishTime>
+    </File>
+    <File Include="bin/System.AppContext.dll">
+      <publishTime>11/05/2016 04:55:34</publishTime>
+    </File>
+    <File Include="bin/System.Console.dll">
+      <publishTime>11/05/2016 04:55:48</publishTime>
+    </File>
+    <File Include="bin/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>11/05/2016 04:55:52</publishTime>
+    </File>
+    <File Include="bin/System.Globalization.Calendars.dll">
+      <publishTime>11/05/2016 04:56:02</publishTime>
+    </File>
+    <File Include="bin/System.IO.Compression.dll">
+      <publishTime>11/05/2016 04:56:08</publishTime>
+    </File>
+    <File Include="bin/System.IO.Compression.ZipFile.dll">
+      <publishTime>11/05/2016 04:56:04</publishTime>
+    </File>
+    <File Include="bin/System.IO.FileSystem.dll">
+      <publishTime>11/05/2016 04:56:08</publishTime>
+    </File>
+    <File Include="bin/System.IO.FileSystem.Primitives.dll">
+      <publishTime>11/05/2016 04:56:08</publishTime>
+    </File>
+    <File Include="bin/System.IO.Packaging.dll">
+      <publishTime>07/19/2017 10:01:28</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>11/05/2016 04:56:30</publishTime>
+    </File>
+    <File Include="bin/System.Net.Sockets.dll">
+      <publishTime>11/05/2016 04:56:34</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.InteropServices.RuntimeInformation.dll">
+      <publishTime>11/05/2016 04:57:00</publishTime>
+    </File>
+    <File Include="bin/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>11/05/2016 04:57:14</publishTime>
+    </File>
+    <File Include="bin/System.Security.Cryptography.Encoding.dll">
+      <publishTime>11/05/2016 04:57:08</publishTime>
+    </File>
+    <File Include="bin/System.Security.Cryptography.Primitives.dll">
+      <publishTime>11/05/2016 04:57:18</publishTime>
+    </File>
+    <File Include="bin/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>11/05/2016 04:57:18</publishTime>
+    </File>
+    <File Include="bin/System.Xml.ReaderWriter.dll">
+      <publishTime>11/05/2016 04:57:36</publishTime>
+    </File>
+    <File Include="checks.aspx">
+      <publishTime>05/04/2018 11:49:44</publishTime>
+    </File>
+    <File Include="Connected Services/GreenPayECheck/CloudService.GreenPayECheck.BillPayCheckResult.datasource">
+      <publishTime>05/07/2018 10:35:15</publishTime>
+    </File>
+    <File Include="Connected Services/GreenPayECheck/CloudService.GreenPayECheck.CancelCheckResult.datasource">
+      <publishTime>05/07/2018 10:35:14</publishTime>
+    </File>
+    <File Include="Connected Services/GreenPayECheck/CloudService.GreenPayECheck.CheckNoPhoneVerificationResult.datasource">
+      <publishTime>05/07/2018 10:35:14</publishTime>
+    </File>
+    <File Include="Connected Services/GreenPayECheck/CloudService.GreenPayECheck.CheckNoteResult.datasource">
+      <publishTime>05/07/2018 10:35:14</publishTime>
+    </File>
+    <File Include="Connected Services/GreenPayECheck/CloudService.GreenPayECheck.CheckStatusResult.datasource">
+      <publishTime>05/07/2018 10:35:14</publishTime>
+    </File>
+    <File Include="Connected Services/GreenPayECheck/CloudService.GreenPayECheck.DraftResult.datasource">
+      <publishTime>05/07/2018 10:35:14</publishTime>
+    </File>
+    <File Include="Connected Services/GreenPayECheck/CloudService.GreenPayECheck.InvoiceResult.datasource">
+      <publishTime>05/07/2018 10:35:15</publishTime>
+    </File>
+    <File Include="Connected Services/GreenPayECheck/CloudService.GreenPayECheck.OneTimeDraftWithSignatureImageResponse.datasource">
+      <publishTime>05/07/2018 10:35:15</publishTime>
+    </File>
+    <File Include="Connected Services/GreenPayECheck/CloudService.GreenPayECheck.ProcessInfoResult.datasource">
+      <publishTime>05/07/2018 10:35:14</publishTime>
+    </File>
+    <File Include="Connected Services/GreenPayECheck/CloudService.GreenPayECheck.RecurringDraftWithSignatureImageResponse.datasource">
+      <publishTime>05/07/2018 10:35:15</publishTime>
+    </File>
+    <File Include="Connected Services/GreenPayECheck/CloudService.GreenPayECheck.RefundCheckResult.datasource">
+      <publishTime>05/07/2018 10:35:14</publishTime>
+    </File>
+    <File Include="Connected Services/GreenPayECheck/CloudService.GreenPayECheck.SignatureImageResult.datasource">
+      <publishTime>05/07/2018 10:35:15</publishTime>
+    </File>
+    <File Include="Connected Services/GreenPayECheck/CloudService.GreenPayECheck.UploadSignatureImageResponse.datasource">
+      <publishTime>05/07/2018 10:35:15</publishTime>
+    </File>
+    <File Include="deposit_one_stack.aspx">
+      <publishTime>05/04/2018 11:49:44</publishTime>
+    </File>
+    <File Include="echo.aspx">
+      <publishTime>05/04/2018 11:49:44</publishTime>
+    </File>
+    <File Include="export_one_stack.aspx">
+      <publishTime>05/04/2018 11:49:44</publishTime>
+    </File>
+    <File Include="get_receipt.aspx">
+      <publishTime>05/04/2018 11:49:44</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/04/2018 11:47:05</publishTime>
+    </File>
+    <File Include="GPOrder.css">
+      <publishTime>05/18/2018 09:59:56</publishTime>
+    </File>
+    <File Include="GreenPayOrder.aspx">
+      <publishTime>05/17/2018 09:36:14</publishTime>
+    </File>
+    <File Include="import_one_stack.aspx">
+      <publishTime>05/04/2018 11:49:44</publishTime>
+    </File>
+    <File Include="link.aspx">
+      <publishTime>05/04/2018 11:49:44</publishTime>
+    </File>
+    <File Include="mark_coins_forsale.aspx">
+      <publishTime>05/04/2018 11:49:44</publishTime>
+    </File>
+    <File Include="OrderFailure.aspx">
+      <publishTime>05/11/2018 09:55:34</publishTime>
+    </File>
+    <File Include="OrderSuccess.aspx">
+      <publishTime>05/18/2018 11:57:38</publishTime>
+    </File>
+    <File Include="print_welcome.aspx">
+      <publishTime>05/04/2018 11:49:44</publishTime>
+    </File>
+    <File Include="setup.aspx">
+      <publishTime>05/04/2018 11:49:44</publishTime>
+    </File>
+    <File Include="show_coins.aspx">
+      <publishTime>05/04/2018 11:49:44</publishTime>
+    </File>
+    <File Include="show_coins_forsale.aspx">
+      <publishTime>05/04/2018 11:49:44</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/18/2018 11:59:16</publishTime>
+    </File>
+    <File Include="withdraw_account.aspx">
+      <publishTime>05/08/2018 09:34:10</publishTime>
+    </File>
+    <File Include="write_check.aspx">
+      <publishTime>05/04/2018 11:49:44</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

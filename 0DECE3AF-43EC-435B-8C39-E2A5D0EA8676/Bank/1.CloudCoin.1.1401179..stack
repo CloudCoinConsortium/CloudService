@@ -1,0 +1,17 @@
+{
+	"cloudcoin": [
+		{ 
+		"nn":"1", 
+		"sn":"1401179", 
+		"an": ["694ab1935fcfd1b90154d7661a3f3acd", "0573fb8011deea1fba0821fdd3a9e228", "ca7466763b826fdb36396ac23d6fbf19", "2ff9868b8b6702a753b05999e5a89265", "2d570a3d6da5f2d85d4844c9a3e1f621",
+			"c31855758ba622b695db283a6fd66e8a", "8fb0c8a3eb6cdf1ccf04cbf27c6dbcde", "5dd02551afef7c5a902b502300e2c6e0", "d2470723b52ff0efce19f16da6da8734", "3fcc66ce0d99e6b9dccbe2005e20a5c7",
+			"c24eebcb500e7b41c4b1eaf880b9ad63", "d5e41084e8ae804c3ca5a3f26f4d6439", "a050edb621b8dbc8ddf16b071d5cc14e", "9134c0696186f1f9075fdfe90214dfff", "b1a2afcdf469c1ed9cbb4ab9bc694f39",
+			"80b03b3520e19bbf7e73a0c7f567afb5", "9d800616edd42c8c65ebae07eb994ab8", "9e0cd9d8125e26755a8399233a08c8c7", "37bcd2fdf3b3b8855c9bf2c86bb9eaac", "94b8de10c54bdc3218af5527ea20f20f",
+			"2c022ba550a2fbc11fb8970fa1c4a013", "55c44e8640ef33dc1b92b1b6b2de5373", "e3f91ae7829f86e705bb47fa6266cd51", "960bac92f51535b3945e7dc87168af95", "5627c2e61ef6d178c0a9298c009cc075"],
+		"ed":"5-2020",
+		"pown":"ppppppppppppppppppppppppp",
+		"aoid": []
+		}
+
+	]
+}
