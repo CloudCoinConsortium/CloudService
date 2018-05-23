@@ -91,9 +91,15 @@
                             <tbody>
                                 <tr>
 
-                                    <td><asp:Button runat="server" ID="BTNSubmitGreenPay" style="background-image: url(images/PayNowButton.png); width: 157px; height: 55px;" OnClick="BTNSubmitGreenPay_Click"/></td>
+                                    <td>
+                                        <asp:Button runat="server" ID="BTNSubmitGreenPay" style="background-image: url(images/PayNowButton.png); width: 157px; height: 55px;" OnClick="BTNSubmitGreenPay_Click"/>
+                                        
+                                    </td>
                                     <!--<td align="center"><input name="GreenButton_id" type="hidden" value="11389" /><input name="TransactionID" type="hidden" value="" /><input id="BTNSubmit" runat="server" alt="" border="0" name="submit" src="https://greenbyphone.com/eCheck/images/PayNowButton.png" type="image" /><img alt="" border="0" height="1" src="https://greenbyphone.com/eCheck/images/spacer.gif" width="1" /></td>
                                     -->
+                                </tr>
+                                <tr>
+                                    <asp:Label runat="server" id="LBLWarning" Text="Order must be at least $5.00 to process!"></asp:Label>
                                 </tr>
                             </tbody>
                         </table>
@@ -122,6 +128,13 @@
             totalPrice = totalCoins * pricePerCoin;
             grandtotal.value = totalPrice;
             grandtotal.innerText = "$" + totalPrice.toFixed(2);
+            if (totalPrice > 4.99) {
+                LBLWarning.innerText = "";
+            }
+            else
+            {
+                LBLWarning.innerText = "Order must be at least $5.00 to process!";
+            }
         }
 
 

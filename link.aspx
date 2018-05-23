@@ -60,6 +60,7 @@
     public async System.Threading.Tasks.Task Page_Load_Async()
     {
         ServiceResponse response = new ServiceResponse();
+        response.time = DateTime.Now.ToString();
 
         string CollectibleID = CheckParameter("c_id");
         string RequestedDenomination = CheckParameter("dn");
