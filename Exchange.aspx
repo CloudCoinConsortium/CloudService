@@ -35,6 +35,7 @@
         }
 	</style>
     <link href="main.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/b7a745f5ac.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -42,6 +43,8 @@
             <div class="inner">
                 <h1>CloudCoin Exchange</h1>
                 <p>The future of digital currency.</p>
+                <br />
+                <asp:Label runat="server" ID="LBLCurrentPrice"></asp:Label>
             </div>
             <video autoplay="" loop="" muted="" playsinline="" src="images/banner.mp4"></video>
         </section>
@@ -49,7 +52,7 @@
             <div class="inner">
             <table>
                 <tbody>
-                    <tr>
+                    <tr style="padding: 10px 10px 10px 10px;">
                         <th>CloudCoin</th>
                         <th>Denomination</th>
                         <th>Amount</th>
@@ -109,6 +112,34 @@
             </table>
         </div>
     </section>
+    <footer id="footer">
+        <div class="inner">
+            <div class="content">
+                <section>
+                    <h3>Extra Info</h3>
+                    <p>Secure Email Based in Switzerland. <a href="https://protonmail.com/" style="color:white;">Get Protonmail</a><br />
+                    Help Desk Available between 8am and 5pm PST.<br />
+                </section>
+                <section>
+                    <h4>Contact Us</h4>
+                    <ul class="alt">
+                    <li><a href="mailto:CloudCoin.HelpDesk@protonmail.com" style="color:white;"><u><span class="__cf_email__" >CloudCoin.HelpDesk@protonmail.com</span></u></a><br />
+                        <a href="tel:1-530-500-2646"><u>1-530-500-2646</u></a></li>
+                    <li>To verify this website is a trusted seller of CloudCoin, contact the Help Desk</li>
+                    </ul>
+                </section>
+                <section>
+                <h4>Social Media</h4>
+                    <ul class="plain">
+                    <li><a href="https://twitter.com/CloudCoinGlobal"><i class="fa-twitter fa">&nbsp;</i>Twitter</a></li>
+                    <li><a href="https://www.facebook.com/cloudcoinconsortium/"><i class="fa-facebook fa">&nbsp;</i>Facebook</a></li>
+                    <li><a href="https://github.com/CloudCoinConsortium"><i class="fa fa-github">&nbsp;</i>Git</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="copyright"><a href="http://cloudcoin.global/">CloudCoin.global</a> &copy; 2018</div>
+            </div>
+</footer>
         <input id="pricepercoin" type="hidden" runat="server" value="0"/>
     </form>
 </body>

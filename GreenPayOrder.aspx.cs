@@ -161,6 +161,7 @@ namespace CloudService
             if (b)
             {
                 TotalPriceOfPurchase = ppc * total;
+                TotalPriceOfPurchase = Math.Round(TotalPriceOfPurchase, 2);
             }
             else
             {

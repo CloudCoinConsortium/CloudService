@@ -23,6 +23,7 @@ namespace CloudService
         protected void Page_Load(object sender, EventArgs e)
         {
             pricepercoin.Value = WebConfigurationManager.AppSettings["PricePerCoin"];
+            LBLCurrentPrice.Text = "Current Price Per Coin: $" + WebConfigurationManager.AppSettings["PricePerCoin"];
             GetCoinsCurrentlyMarkedForSale();
             LBLOnesAvailable.Text = MarkedOnes.ToString() + " in stock";
             LBLFivesAvailable.Text = MarkedFives.ToString() + " in stock";
@@ -30,26 +31,28 @@ namespace CloudService
             LBLHundredsAvailable.Text = MarkedHundreds.ToString() + " in stock";
             LBLTwoHundredFiftiesAvailable.Text = MarkedTwoHundredFifties.ToString() + " in stock";
 
-            
 
 
-
+            double ppc = double.Parse(WebConfigurationManager.AppSettings["PricePerCoin"]);
+            double price = 0.00;
             int x = MarkedOnes;
             if (DDLOnes.Items.Count == 0)
             {
-                ListItem defaultItem = new ListItem("x0 = 0 CloudCoins", "0");
+                ListItem defaultItem = new ListItem("", "0");
 
                 DDLOnes.Items.Add(defaultItem);
                 if (x > 0)
                 {
-                    ListItem li = new ListItem("x1 = 1 CloudCoins", "1");
+                    price = 1 * ppc;
+                    ListItem li = new ListItem("x1 = 1 CloudCoins " + "($" + price.ToString() + ")", "1");
                     DDLOnes.Items.Add(li);
                 }
                 if (x > 4)
                 {
                     for (int i = 5; i <= x; i = i + 5)
                     {
-                        ListItem li = new ListItem("x" + i.ToString() + " = " + i.ToString() + " CloudCoins", i.ToString());
+                        price = i * ppc;
+                        ListItem li = new ListItem("x" + i.ToString() + " = " + i.ToString() + " CloudCoins " + "($" + price.ToString() + ")", i.ToString());
                         DDLOnes.Items.Add(li);
                     }
                 }
@@ -58,15 +61,18 @@ namespace CloudService
                 DDLFives.Items.Add(defaultItem);
                 if (x > 0)
                 {
-                    ListItem li = new ListItem("x1 = 5 CloudCoins", "5");
+                    price = 5 * ppc;
+                    ListItem li = new ListItem("x5 = 5 CloudCoins " + "($" + price.ToString() + ")", "5");
                     DDLFives.Items.Add(li);
                 }
                 if (x > 4)
                 {
                     for (int i = 5; i <= x; i = i + 5)
                     {
+
                         int y = i * 5;
-                        ListItem li = new ListItem("x" + i.ToString() + " = " + y.ToString() + " CloudCoins", y.ToString());
+                        price = y * ppc;
+                        ListItem li = new ListItem("x" + i.ToString() + " = " + y.ToString() + " CloudCoins " + "($" + price.ToString() + ")", y.ToString());
                         DDLFives.Items.Add(li);
                     }
                 }
@@ -75,7 +81,8 @@ namespace CloudService
                 DDLTwentyFives.Items.Add(defaultItem);
                 if (x > 0)
                 {
-                    ListItem li = new ListItem("x1 = 25 CloudCoins", "25");
+                    price = 25 * ppc;
+                    ListItem li = new ListItem("x1 = 25 CloudCoins " + "($" + price.ToString() + ")", "25");
                     DDLTwentyFives.Items.Add(li);
                 }
                 if (x > 4)
@@ -83,7 +90,8 @@ namespace CloudService
                     for (int i = 5; i <= x; i = i + 5)
                     {
                         int y = i * 25;
-                        ListItem li = new ListItem("x" + i.ToString() + " = " + y.ToString() + " CloudCoins", y.ToString());
+                        price = y * ppc;
+                        ListItem li = new ListItem("x" + i.ToString() + " = " + y.ToString() + " CloudCoins " + "($" + price.ToString() + ")", y.ToString());
                         DDLTwentyFives.Items.Add(li);
                     }
                 }
@@ -92,7 +100,8 @@ namespace CloudService
                 DDLHundreds.Items.Add(defaultItem);
                 if (x > 0)
                 {
-                    ListItem li = new ListItem("x1 = 100 CloudCoins", "100");
+                    price = 100 * ppc;
+                    ListItem li = new ListItem("x1 = 100 CloudCoins " + "($" + price.ToString() + ")", "100");
                     DDLHundreds.Items.Add(li);
                 }
                 if (x > 4)
@@ -100,7 +109,8 @@ namespace CloudService
                     for (int i = 5; i <= x; i = i + 5)
                     {
                         int y = i * 100;
-                        ListItem li = new ListItem("x" + i.ToString() + " = " + y.ToString() + " CloudCoins", y.ToString());
+                        price = y * ppc;
+                        ListItem li = new ListItem("x" + i.ToString() + " = " + y.ToString() + " CloudCoins " + "($" + price.ToString() + ")", y.ToString());
                         DDLHundreds.Items.Add(li);
                     }
                 }
@@ -109,7 +119,8 @@ namespace CloudService
                 DDLTwoHundredFifties.Items.Add(defaultItem);
                 if (x > 0)
                 {
-                    ListItem li = new ListItem("x1 = 250 CloudCoins", "250");
+                    price = 250 * ppc;
+                    ListItem li = new ListItem("x1 = 250 CloudCoins " + "($" + price.ToString() + ")", "250");
                     DDLTwoHundredFifties.Items.Add(li);
                 }
                 if (x > 4)
@@ -117,7 +128,8 @@ namespace CloudService
                     for (int i = 5; i <= x; i = i + 5)
                     {
                         int y = i * 250;
-                        ListItem li = new ListItem("x" + i.ToString() + " = " + y.ToString() + " CloudCoins", y.ToString());
+                        price = y * ppc;
+                        ListItem li = new ListItem("x" + i.ToString() + " = " + y.ToString() + " CloudCoins " + "($" + price.ToString() + ")" , y.ToString());
                         DDLTwoHundredFifties.Items.Add(li);
                     }
                 }
