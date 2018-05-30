@@ -25,7 +25,7 @@ You create an accounting system and want to recieve and export CloudCoins.
 
 
 
-NOTES: To Stop Replay attacks and other sercurity concenrs, HTTPS.
+NOTES: To Stop Replay attacks and other sercurity concerns, uses HTTPS.
 
 For receiving CloudCoins, you may only need a few services. The other services may be shut down to reduce the security surface. Services that are neccessary include: Echo, (Deposite or Import One Stack), Get Receipt. The Print Welcome, Show Coins, Expot One Stack services can be shut off if you will collect your CloudCoins from the harddrive of the web server that runs CloudBank. 
 
@@ -165,71 +165,14 @@ Sample Response if nothing attached :
 }
 ```
 
-Sample Response if receipt number already in use :
-```
-{
- "bank_server":"bank.cloudcoin.global",
- "status":"error",
- "message":"Duplicate: The receipt number is already in use.",
- "reciept":"640322f6d30c45328914b441ac0f4e5b",
- "time":"2016-49-21 7:49:PM"
-}
-```
-
 ## GET RECEIPT SERVICE
 
 The get receipt service returns a receipt based on the receipt id. 
 
 
 ### Sample Reciepts
-If powning process has not been started
-```
-{
-	"receipt_id": "e054a34f2790fd3353ea26e5d92d9d2f",
-	"time": "2016-49-21 7:49:PM",
-	"timezone": "UTC-7",
-	"bank_server": "bank.CloudCoin.Global",
-	"total_authentic": 5,
-	"total_fracked": 7,
-	"total_counterfeit": 1,
-	"total_lost": 0,
-	"receipt_detail": [{
-			"nn.sn": "1.16777216",
-			"status": "suspect",
-			"pown": "uuuuuuuuuuuuuuuuuuuuuuuuu",
-			"note": "Waiting"
-		},
-		{
-			"nn.sn": "1:1425632",
-			"status": "suspect",
-			"pown": "uuuuuuuuuuuuuuuuuuuuuuuuu",
-			"note": "Waiting"
-		},
-		{
-			"nn.sn": "1.956258",
-			"status": "suspect",
-			"pown": "uuuuuuuuuuuuuuuuuuuuuuuuu",
-			"note": "Waiting"
-		},
-		{
-			"nn.sn": "1.15666214",
-			"status": "suspect",
-			"pown": "uuuuuuuuuuuuuuuuuuuuuuuuu",
-			"note": "Waiting"
-		},
-		{
-			"nn.sn": "1.15265894",
-			"status": "suspect",
-			"pown": "uuuuuuuuuuuuuuuuuuuuuuuuu",
-			"note": "Waiting"
-		}
 
-	]
-
-}
-```
-
-If powning process is complete:
+when powning process is complete:
 ```
 {
         "receipt_id":"e054a34f2790fd3353ea26e5d92d9d2f",
@@ -375,16 +318,20 @@ Sample Response if fail:
 These services allow you to exchange your CloudCoins for other money or even goods and services. Exchange services include:
 
 * Show Coins For Sale
+* Mark Coins For Sale
 * Place Order using Green.money ach
-* Check Green Money order
 * Place order using PayPal and Fulfill
 * Place order using Stripe and Fulfill
 * Fulfil Order with custom text
 * Advertsie on Exchange
 
+## Echange
+Provides a default ordering page for selling cloudcoins
 
+```
+https://bank.cloudcoin.global/service/exchange.aspx
 
-
+```
 
 
 ## Show Coins For Sale
@@ -402,9 +349,6 @@ Sample Response if good:
 {
  "exchange_server":"bank.cloudcoin.global",
  "status":"coins_for_sale",
- "currencies":["dollars","bitcoin"],
- "prices":[.03,.0098],
- "methods":["green.money","stripe","paypal"]
  "ones":205,
  "fives":10,
  "twentyfives":105,
@@ -426,78 +370,30 @@ Sample Response if fail:
 
 ## Place Order With Green.money ACH
 
-This allows an order to be placed using the Green.money ACH payment system. Note that you will need an account with Green.money. You will need a web form that posts specific into and a default Green Pay button. 
+This allows an order to be placed using the Green.money ACH payment system. Note that you will need an account with Green.money. You will need a web form that posts specific into and a default Green Pay order page. 
 
-Sample POST Request:
+Sample Request:
 
 ```
-https://bank.cloudcoin.global/service/place_order_with_green_money?
-GreenButton_id=11087
-Amount=11.43
-ItemName=Cloud Ed Pack se
-TransactionID=2018.3.28.23.20.b0b7dc
-Affiliate=Bill Jenkins
+https://bank.cloudcoin.global/service/Green_Pay_Order.aspx?ones=5&fives=5&twentyfives=5&hundreds=5&twohundredfifties=5
+
 
 ```
 
-Sample Response if good:
+Response if good:
 ```
-{
- "exchange_server":"bank.cloudcoin.global",
- "status":"success",
- "message":"Green Payment Accepted. Check the URL to collect your CloudCoins",
- "green_pay_status_url":"https://bank.cloudcoin.global/service/green_pay_status?id=2018.3.28.23.20.b0b7dc",
- "time":"2016-49-21 7:49:PM"
-}
+GreenPayOrder checkout page displayed selling the amount of each note specified in the request
 ```
 
 Sample Response if fail:
-NOTE: The programmer should add the error that caused the fail instead of the "Error detail here" text. 
 ```
 {
  "exchange_server":"bank.cloudcoin.global",
  "status":"fail",
- "message":"Invalid Request - Error detail here.",
+ "message":"Error detail here.",
  "time":"2016-49-21 7:49:PM"
 }
 ```
-
-## Green Pay Status
-Allows the user to get a check from the CloudBank if the Green Pay status is paid. The user can click on this over and over until they get a check
-
-
-Sample POST Request:
-
-```
-https://bank.cloudcoin.global/service/green_pay_status?id=2018.3.28.23.20.b0b7dc
-
-```
-
-Sample Response if good: 
-NOTE: This is the same response as the Write Check service.
-
-```
-{
- "bank_server":"bank.cloudcoin.global",
- "status":"url",
- "message":"https://bank.CloudCoin.Global/checks?id=c3c3ab7b75ab4d089d2d4a287c1ef232",
- "time":"2016-49-21 7:49:PM"
-}
-```
-
-
-Sample Response if fail:
-NOTE: The programmer should add the exact reason the customer was not able to recieve a check
-```
-{
- "exchange_server":"bank.cloudcoin.global",
- "status":"fail",
- "message":"Your Check has not cleared yet. Please try this URL later.",
- "time":"2016-49-21 7:49:PM"
-}
-```
-
-
 
 # BILL PAY SERVICE
 
