@@ -1,4 +1,3 @@
-c:\users\cloudcoin\source\repos\CloudService\CloudService\obj\Debug\CloudService.csprojResolveAssemblyReference.cache
 c:\users\cloudcoin\source\repos\CloudService\CloudService\obj\Debug\CloudService.csproj.CoreCompileInputs.cache
 c:\users\cloudcoin\source\repos\CloudService\CloudService\bin\CloudService.dll.config
 c:\users\cloudcoin\source\repos\CloudService\CloudService\bin\CloudService.dll
@@ -44,3 +43,4 @@ c:\users\cloudcoin\source\repos\CloudService\CloudService\obj\Debug\CloudService
 c:\users\cloudcoin\source\repos\CloudService\CloudService\obj\Debug\CloudService.Migrations.fourth.resources
 c:\users\cloudcoin\source\repos\CloudService\CloudService\obj\Debug\CloudService.Migrations.fifth.resources
 c:\users\cloudcoin\source\repos\CloudService\CloudService\obj\Debug\CloudService.Migrations.sixth.resources
+C:\Users\CloudCoin\source\repos\CloudService\CloudService\obj\Debug\CloudService.Migrations.Affiliate.resources

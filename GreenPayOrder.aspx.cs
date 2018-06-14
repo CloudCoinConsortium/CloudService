@@ -55,6 +55,7 @@ namespace CloudService
         private int TwentyFivesAfterSale;
         private int HundredsAfterSale;
         private int TwoHundredFiftiesAfterSale;
+        private string af;
 
 
         protected void Page_Load(object sender, EventArgs e)
@@ -71,6 +72,7 @@ namespace CloudService
             Hundreds = CheckParameter("Hundreds");
             TwoHundredFifties = CheckParameter("TwoHundredFifties");
             Memo = CheckParameter("Memo");
+            af = CheckParameter("af");
 
             GetCoinsCurrentlyMarkedForSale();
 
@@ -231,6 +233,7 @@ namespace CloudService
             NewOrder.TotalCoinsOrdered = int.Parse(lblTotalCoins.Text);
             NewOrder.CheckNumber = txtCheckNumber.Text;
             NewOrder.TimeStamp = DateTime.Now;
+            NewOrder.Affiliate = af;
 
             CoinsAvailableAfterSale(NewOrder);
 
@@ -262,7 +265,7 @@ namespace CloudService
             NewOrder.VerificationResultCode = DraftResult.VerifyResult;
             NewOrder.VerificationResultDesc = DraftResult.VerifyResultDescription;
 
-            OrderEntities oe = new OrderEntities("DefaultConnection");
+            OrderEntities oe = new OrderEntities();
             oe.Orders.Add(NewOrder);
             oe.SaveChanges();
 

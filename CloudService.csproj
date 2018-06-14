@@ -272,6 +272,10 @@
     <Compile Include="Migrations\201805081637006_sixth.Designer.cs">
       <DependentUpon>201805081637006_sixth.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806141803591_Affiliate.cs" />
+    <Compile Include="Migrations\201806141803591_Affiliate.Designer.cs">
+      <DependentUpon>201806141803591_Affiliate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="OrderEntities.cs" />
     <Compile Include="OrderFailure.aspx.cs">
@@ -316,6 +320,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805081637006_sixth.resx">
       <DependentUpon>201805081637006_sixth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806141803591_Affiliate.resx">
+      <DependentUpon>201806141803591_Affiliate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

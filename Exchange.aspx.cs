@@ -30,8 +30,7 @@ namespace CloudService
             LBLTwentyFivesAvailable.Text = MarkedTwentyFives.ToString() + " in stock";
             LBLHundredsAvailable.Text = MarkedHundreds.ToString() + " in stock";
             LBLTwoHundredFiftiesAvailable.Text = MarkedTwoHundredFifties.ToString() + " in stock";
-
-
+            
 
             double ppc = double.Parse(WebConfigurationManager.AppSettings["PricePerCoin"]);
             double price = 0.00;
@@ -167,6 +166,12 @@ namespace CloudService
 
         protected void BTNSubmitGreenPay_Click(object sender, EventArgs e)
         {
+            
+            string af = Request["af"];
+            if (af == null)
+            {
+                af = "none";
+            }
             int Ones = int.Parse(DDLOnes.SelectedValue);
             int Fives = int.Parse(DDLFives.SelectedValue);
             Fives = Fives / 5;
@@ -183,7 +188,7 @@ namespace CloudService
 
             if (totalPrice > 4.99)
             {
-                Response.Redirect("GreenPayOrder.aspx?Ones=" + Ones + "&Fives=" + Fives + "&TwentyFives=" + TwentyFives + "&Hundreds=" + Hundreds + "&TwoHundredFifties=" + TwoHundredFifties);
+                Response.Redirect("GreenPayOrder.aspx?af=" + af + "&Ones=" + Ones + "&Fives=" + Fives + "&TwentyFives=" + TwentyFives + "&Hundreds=" + Hundreds + "&TwoHundredFifties=" + TwoHundredFifties);
             }
             else
             {

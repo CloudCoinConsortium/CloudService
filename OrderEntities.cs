@@ -11,8 +11,8 @@ public class OrderEntities : DbContext
 {
     public DbSet<Order> Orders { get; set; }
 
-    public OrderEntities(string connString)
-        : base(connString)
+    public OrderEntities()
+        : base("DefaultConnection")
     {
     }
 }
@@ -46,4 +46,5 @@ public class Order
     public string VerificationResultDesc { get; set; }
     public string FileName { get; set; }
     public DateTime TimeStamp { get; set; }
+    public string Affiliate { get; set; }
 }
